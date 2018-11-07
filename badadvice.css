@@ -7,9 +7,22 @@ body{
   font-family: 'Avenir', 'Montserrat', sans-serif;
 }
 
-.containter-fluid {
+.containter {
   background-color: #f4fafd;
   text-align: center;
+  overflow: hidden;
+}
+
+.img-div {
+  padding: 0 3em 0 3em; 
+}
+
+#logo {
+  margin: 5em 0 5em 0; 
+  width: 100%;
+  max-width: 100%;
+  height: auto; 
+  object-fit: contain;
 }
 
 .advice_box {
