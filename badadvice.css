@@ -13,6 +13,35 @@ body{
   overflow: hidden;
 }
 
+#container{
+  width: 100vw;
+}
+
+.title{
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+
+p.headline{
+  font-size: 12px;
+  padding: 10px auto;
+  margin: 25px;
+}
+
+#side{
+  width: 25vw;
+  height: 100vh;
+  background-color: #5a87ad;
+  float: left;
+}
+
+#rightside{
+  width: 70vw;
+  height: 100vh;
+  background-color: #fff;
+  float: left;
+}
+
 .img-div {
   padding: 0 3em 0 3em;
 }

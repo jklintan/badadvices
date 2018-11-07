@@ -25,7 +25,15 @@
 	<SCRIPT TYPE="text/javascript"> function popup(mylink, windowname) { if (! window.focus)return true; var href; if (typeof(mylink) == 'string') href=mylink; else href=mylink.href; window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); return false; } </SCRIPT>
 	<body>
 
-	<div class="container">
+	<div id="container" class="container">
+		<div id="side">
+				<h1 class="title">Bad Advices</h1>
+			<p class="headline">Are you fed up with decisions and advices? Did the last person you talked to give you a great advice but everything still seemed to turn out wrong?
+				<br/>
+				<br/>
+				 Let me present to you the solutions to your problems, bad advices. They will not solve your problem, but they are funny!</p>
+		</div>
+		<div id="rightside">
 		<div class="row">
 			<div class="col-mb-3 img-div center">
 				<img class="img-fluid" id="logo" src="BAlogo.png" alt="logo">
@@ -43,6 +51,7 @@
 		<div id="buttonbox">
 			<button class="button button-primary" onclick="showAdvice()">Advice me!</button>  
 		</div>
+	</div>
 	</div>
 	</body>
 </html>
