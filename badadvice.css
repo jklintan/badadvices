@@ -14,13 +14,19 @@ body{
 }
 
 .img-div {
-  padding: 0 3em 0 3em; 
+  padding: 0 3em 0 3em;
+}
+
+.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #logo {
   margin: 5em 0 5em 0; 
-  width: 100%;
-  max-width: 100%;
+  width: 10em;
+  max-width: 10em;
   height: auto; 
   object-fit: contain;
 }
