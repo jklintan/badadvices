@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <link rel="stylesheet" type="text/css" href="badadvice.css">
-                <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-                <!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="badadvice.css">
-        </head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="badadvice.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-        <SCRIPT TYPE="text/javascript"> function popup(mylink, windowname) { if (! window.focus)return true; var href; if (typeof(mylink) == 'string') href=mylink; else href=mylink.href; window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); return false; } </SCRIPT>
-        
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="badadvice.css">
 
-<body>
-<h1>Bad Advices</h1>
+		<script src="app.js"></script>
 
-<div id="advice_box"> 
-Are you fed up with decisions and advices? Let me present to you, bad advices. They will not solve your problem, but they are funny!
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
-<br/>
-<p id="demo"><FONT color="#f4fafd">-</FONT></p>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<SCRIPT TYPE="text/javascript"> function popup(mylink, windowname) { if (! window.focus)return true; var href; if (typeof(mylink) == 'string') href=mylink; else href=mylink.href; window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); return false; } </SCRIPT>
+	<body>
 
+	<div class="container-fluid" id="container">
+		<h1>Bad Advices</h1>
 
-</div>
+		<div class="advice_box" id="advice_box"> 
+			<div class="advice_box">
+				<p>Are you fed up with decisions and advices? Let me present to you, bad advices. They will not solve your problem, but they are funny!</p>
+			</div>
+			<p id="demo">-</p>
+		</div>
 
-<div id="buttonbox">
-        <button class="button button-primary" onclick="document.getElementById('demo').innerHTML = ' - THIS IS A REALLY BAD ADVICE! - ';">Advice me!</button>  
-            
-            
-</div>
-
-<div id="container">
-    <br/>
-    <br/>
-    <br/>
-    
-    
-    
-</div>
-
-</body>
+		<div id="buttonbox">
+			<button class="button button-primary" onclick="showAdvice()">Advice me!</button>  
+		</div>
+	</div>
+	</body>
 </html>
