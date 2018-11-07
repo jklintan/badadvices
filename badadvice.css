@@ -15,23 +15,6 @@ body{
 
 #container{
   width: 100vw;
-  background-color: blue;
-}
-
-.title{
-  font-size: 2.2em;
-  font-family: 'Montserrat Subrayada', sans-serif;
-}
-
-.advice_text{
-  font-size: 2em;
-}
-
-
-p.headline{
-  font-size: 12px;
-  padding: 10px auto;
-  margin: 50px 25px 35px 30px;
 }
 
 #side_logo{
@@ -84,11 +67,6 @@ p.headline{
   object-fit: contain;
 }
 
-.advice_box {
-  padding-bottom: 7em;
-  padding-top: 1em;
-}
-
 #advice_box{
   color: #5a87ad;
   text-align: center;
@@ -96,12 +74,48 @@ p.headline{
 }
 
 #demo {
-  color: #b37b49;
+  color: #101e31;
+  font-family: 'Avenir';
 }
+
+
+
+/*Texts */
+h1 {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.title{
+  font-size: 2.2em;
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.advice_text{
+  font-size: 2em;
+}
+
+.advice_box {
+  padding-bottom: 7em;
+  padding-top: 1em;
+}
+
+p.headline{
+  font-size: 12px;
+  padding: 10px auto;
+  margin: 50px 25px 35px 30px;
+}
+
+p.quote{
+  font-size: 5em;
+}
+
+
+/* Button related stuff*/
 
 #buttonbox{
 	height: 100px;
-	margin-top: 2em;
+	margin-top: 1em;
   /*position: fixed;*/
 	width: 100%;
 	float: center;
@@ -121,43 +135,48 @@ p.headline{
   border-radius: 10px;
 }
 
-/*Texts */
-h1 {
-  margin-top: 2em;
-  color: #5a87ad;
-  text-align: center;
-}
-
-.button {
-	background-color:#5a87ad;
-	font-family: 'Avenir', 'Montserrat', sans-serif;
-	font-size:12px;
-	text-decoration:none;
-	color:#fff;
-	position:relative;
-	padding:10px 50px 10px 50px;
-	padding-right:20px;
-	border-radius: 0px;
-	
-}
-
-.button:active {
-	top:3px;
-}
-
-.button::before {
-	
-}
 
 .btn{
-  background-color: #5a87ad;
+  background-color: #b37b49;
   width: 15vw;
   color: white;
   height: 6vh;
+  font-size: 2em;
 }
 
-.button:active::before {
-	top:50%;
-	margin-top:12px;
-}
 
+button{
+  background:#b37b49;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#b37b49;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #b37b49;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
