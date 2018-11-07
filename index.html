@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="badadvice.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
 
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="badadvice.css">
@@ -25,31 +26,37 @@
 	<SCRIPT TYPE="text/javascript"> function popup(mylink, windowname) { if (! window.focus)return true; var href; if (typeof(mylink) == 'string') href=mylink; else href=mylink.href; window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); return false; } </SCRIPT>
 	<body>
 
-	<div id="container" class="container">
+	<div id="container">
 		<div id="side">
 				<h1 class="title">Bad Advices</h1>
 			<p class="headline">Are you fed up with decisions and advices? Did the last person you talked to give you a great advice but everything still seemed to turn out wrong?
 				<br/>
 				<br/>
 				 Let me present to you the solutions to your problems, bad advices. They will not solve your problem, but they are funny!</p>
+				 <br/>
+				 <br/>
+				 <br/>
+				 <br/>
+				 <img class="side_logo" id="side_logo" src="BAlogo.png" alt="logo">
+				 <p class="copyright">&copy Linnea & Jossan 2018</p>
 		</div>
 		<div id="rightside">
 		<div class="row">
 			<div class="col-mb-3 img-div center">
 				<img class="img-fluid" id="logo" src="BAlogo.png" alt="logo">
 			</div>		
-		</div>
-		<h1>Bad Advices</h1>
+</div>
+		<h1>Bad Advice Generator</h1>
 
 		<div class="advice_box" id="advice_box"> 
 			<div class="advice_box">
-				<p>Are you fed up with decisions and advices? Let me present to you, bad advices. They will not solve your problem, but they are funny!</p>
+				
 			</div>
-			<p id="demo">-</p>
+			<p id="demo" class="advice_text"> - This is not an advice -</p>
 		</div>
 
 		<div id="buttonbox">
-			<button class="button button-primary" onclick="showAdvice()">Advice me!</button>  
+			<button type="button" class="btn" onclick="showAdvice()">Advice me!</button>
 		</div>
 	</div>
 	</div>
